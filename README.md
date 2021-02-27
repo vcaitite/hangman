@@ -6,7 +6,7 @@ Hangman is a popular game that a player tries to guess a word by suggesting lett
 
 # Technology
 
-Built using Python
+Built using Python 3.6
 
 # Version and Release
 
@@ -18,8 +18,8 @@ Linux/Windows
 
 # Prerequisites
 
-Python 3.x.x
-Python-pip
+-Python 3.x.x
+-Python-pip
 
 # Instructions
 
@@ -37,10 +37,12 @@ python hangman.py
 
 # Developer
 
-- Vítor Caitité (![](vitorcaitite@gmail.com))
+- Vítor Caitité (vitorcaitite@gmail.com)
+
+Pull requests are welcome! 
 
 # Credits
 
-- ASCII Arts: ![](https://ascii.co.uk/art)
-- Words : ![](https://www.hangmanwords.com/words)
+- ASCII Arts: https://ascii.co.uk/art
+- Words : https://www.hangmanwords.com/words
 
