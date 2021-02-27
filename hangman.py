@@ -19,11 +19,12 @@ print('''
 ''')
 
 print("Welcome to the hangman game!")
-play_option = int(input("Which do you prefer: 1- Type a word; or 2- Play with a random word."))
+play_option = int(input("Which do you prefer: 1- Type a word; or 2- Play with a random word.  "))
+secret_word = ""
 if play_option == 1:
     secret_word = getpass.getpass(prompt='Type a secret word: ').lower()
 elif play_option == 2:
-    word_line = random.randint(0, read_txt.archive_lines())
+    secret_word = read_txt.read_random_word()
 
-print(word_line)
+print(secret_word)
 
