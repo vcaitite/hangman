@@ -2,7 +2,11 @@
 
 # Description
 
-Hangman is a popular game that a player tries to guess a word by suggesting letters within a certain number of guesses. Here a version of this game was implemented to be played in the terminal.
+Hangman is a popular game that a player tries to guess a word by suggesting letters within a certain number of guesses. Here a version of this game was implemented to be played in the terminal. The game has two modes:
+
+1 - A user must enter the secret word (useful for playing with more than 1 player);
+
+2 - A secret word will be selected randomly among the words in the word_list.txt file. <i>To add or change words in the game, you only need to modify this file.</i>
 
 # Technology
 
@@ -18,8 +22,8 @@ Linux/Windows
 
 # Prerequisites
 
--Python 3.x.x
--Python-pip
+- Python 3.x.x
+- Python-pip
 
 # Instructions
 
