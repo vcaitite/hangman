@@ -9,12 +9,17 @@ print(ascii_arts.welcome_image)
 print("Welcome to the hangman game!")
 
 # Asking the player to choose an option of the game and defining the word
-play_option = int(input("Which do you prefer: 1- Type a word; or 2- Play with a random word.  "))
-secret_word = ""
-if play_option == 1:
-    secret_word = getpass.getpass(prompt='Type a secret word: ').lower()
-elif play_option == 2:
-    secret_word = read_txt.read_random_word()
+play_option = 0
+while play_option != 1 and play_option != 2:
+    play_option = int(input("Which do you prefer: 1- Type a word; or 2- Play with a random word.  "))
+    secret_word = ""
+    if play_option == 1:
+        secret_word = getpass.getpass(prompt='Type a secret word: ').lower()
+        secret_word += '\n'
+    elif play_option == 2:
+        secret_word = read_txt.read_random_word()
+    else:
+        print("Invalid option!\a")
 
 # Printing display:
 display = utils.display([], secret_word)
@@ -26,6 +31,9 @@ lives = 6
 while "_" in display and lives > 0:
     # Asking the user to guess a letter:
     letter_guess = input("Guess a letter please: ").lower()
+    while letter_guess == "":
+        print("You typed nothing.")
+        letter_guess = input("Guess a letter please: ").lower()
     # Clear the screen
     clear()
     # Catches the position of a letter in the secret word
